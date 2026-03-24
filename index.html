@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Columbia–Haifa Research Initiative</title>
+    <meta property="og:title" content="Columbia–Haifa Research Initiative">
+    <meta property="og:description" content="A research partnership between Columbia Law School and the University of Haifa — Law, Technology, and Markets.">
+    <meta property="og:image" content="img/og-card.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="img/favicon-src.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -236,6 +242,28 @@
             padding-top: calc(var(--nav-height) + clamp(4rem, 10vw, 8rem));
             padding-bottom: clamp(4rem, 8vw, 6rem);
             border-bottom: 1px solid var(--color-border);
+            background: url('img/hero-bg.png') center center / cover no-repeat;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(13,17,23,0.92) 0%, rgba(27,40,56,0.85) 100%);
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1, .hero .hero-tagline {
+            color: #FAFAF8;
+        }
+
+        .hero .hero-tagline {
+            color: rgba(250,250,248,0.7);
         }
 
         .hero-institutions {
@@ -253,8 +281,8 @@
             letter-spacing: 0.06em;
             padding: 0.35rem 0.75rem;
             border-radius: 2px;
-            background: var(--color-badge-bg);
-            color: var(--color-muted);
+            background: rgba(250,250,248,0.1);
+            color: rgba(250,250,248,0.7);
         }
 
         .hero-inst-badge.columbia { border-left: 3px solid var(--color-columbia); }
@@ -855,7 +883,8 @@
                 <p>
                     Our research agenda encompasses four interconnected domains: financial markets and regulation; technology and algorithmic governance; venture capital, startups, and corporate governance; and consumer and household finance. These domains reflect the conviction that the most pressing questions in market governance today sit at the intersection of law, technology, and economics.
                 </p>
-                <h4 style="margin-top: 2rem; margin-bottom: 0.75rem; font-family: var(--font-heading); font-size: 1.15rem;">Why Columbia and Haifa</h4>
+                <img src="img/map-connection.png" alt="New York to Haifa connection" style="width: 100%; border-radius: 2px; margin: 2rem 0 1rem; border: 1px solid var(--color-border);">
+                <h4 style="margin-top: 0; margin-bottom: 0.75rem; font-family: var(--font-heading); font-size: 1.15rem;">Why Columbia and Haifa</h4>
                 <p>
                     The partnership builds on deep institutional ties. Multiple members hold degrees from or have held positions at Columbia Law School, and the two faculties share a commitment to rigorous, empirically grounded, and policy-relevant legal scholarship. Israel's position as a global technology hub and its distinctive regulatory landscape make Haifa a natural partner for research on how law and markets interact in a technology-driven economy.
                 </p>
