@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Columbia–Haifa Research Initiative</title>
     <meta property="og:title" content="Columbia–Haifa Research Initiative">
-    <meta property="og:description" content="A research partnership between Columbia Law School and the University of Haifa — Law, Technology, and Markets.">
+    <meta property="og:description" content="A research initiative by faculty at Columbia Law School and the University of Haifa — Law, Technology, and Markets.">
     <meta property="og:image" content="img/og-card.png">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
@@ -456,6 +456,25 @@
             font-weight: 600;
             line-height: 1.2;
             margin-bottom: 0.25rem;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .person-name:hover {
+            color: var(--color-accent);
+        }
+
+        .person-bio-full {
+            display: none;
+            margin-top: 0.5rem;
+        }
+
+        .person-card.expanded .person-bio-full {
+            display: block;
+        }
+
+        .person-card.expanded .person-bio-short {
+            display: none;
         }
 
         .person-title {
@@ -837,7 +856,7 @@
         </div>
         <h1 class="fade-in">The Columbia–Haifa<br>Research Initiative</h1>
         <p class="hero-tagline fade-in">
-            A research partnership advancing scholarship at the intersection of law, technology, and markets. We bring together scholars from both institutions to produce work that informs regulatory policy on both sides of the Atlantic.
+            An initiative by faculty at Columbia Law School and the University of Haifa, advancing scholarship at the intersection of law, technology, and markets. We bring together scholars to produce work that informs regulatory policy on both sides of the Atlantic.
         </p>
     </div>
 </section>
@@ -878,7 +897,7 @@
         <div class="about-grid">
             <div class="fade-in">
                 <p>
-                    The Columbia–Haifa Research Initiative is a collaborative research partnership between the University of Haifa Faculty of Law and Columbia Law School. Founded by Prof. Moran Ofir and Prof. Joshua Mitts, the Initiative brings together leading scholars, emerging researchers, and practitioners to study the legal architecture of modern markets and the governance of the technologies transforming them.
+                    The Columbia–Haifa Research Initiative is a collaborative research partnership between faculty at the University of Haifa Faculty of Law and Columbia Law School. Founded by Prof. Moran Ofir and Prof. Joshua Mitts, the Initiative brings together leading scholars, emerging researchers, and practitioners to study the legal architecture of modern markets and the governance of the technologies transforming them.
                 </p>
                 <p>
                     Our research agenda encompasses four interconnected domains: financial markets and regulation; technology and algorithmic governance; venture capital and startups; and consumer and household finance. These domains reflect the conviction that the most pressing questions in market governance today sit at the intersection of law, technology, and economics.
@@ -886,25 +905,25 @@
                 <img src="img/map-connection.png" alt="New York to Haifa connection" style="width: 100%; border-radius: 2px; margin: 2rem 0 1rem; border: 1px solid var(--color-border);">
                 <h4 style="margin-top: 0; margin-bottom: 0.75rem; font-family: var(--font-heading); font-size: 1.15rem;">Why Columbia and Haifa</h4>
                 <p>
-                    The partnership builds on deep institutional ties. Multiple members hold degrees from or have held positions at Columbia Law School, and the two faculties share a commitment to rigorous, empirically grounded, and policy-relevant legal scholarship. Israel's position as a global technology hub and its distinctive regulatory landscape make Haifa a natural partner for research on how law and markets interact in a technology-driven economy.
+                    The initiative builds on deep scholarly ties. Multiple members hold degrees from or have held positions at Columbia Law School, and the group shares a commitment to rigorous, empirically grounded, and policy-relevant legal scholarship. Israel's position as a global technology hub and its distinctive regulatory landscape make Haifa a natural partner for research on how law and markets interact in a technology-driven economy.
                 </p>
             </div>
             <div class="about-sidebar">
                 <h4>By the Numbers</h4>
                 <div class="stat-item">
                     <div class="stat-number">2</div>
-                    <div class="stat-label">Partner institutions</div>
+                    <div class="stat-label">Law schools</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">6</div>
-                    <div class="stat-label">Principal investigators</div>
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Core faculty</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">4</div>
                     <div class="stat-label">Research pillars</div>
                 </div>
                 <h4>Community</h4>
-                <p class="text-small text-muted">Core Faculty &middot; Core Fellows &middot; Academic Affiliates &middot; Practitioner Affiliates</p>
+                <p class="text-small text-muted">Directors &middot; Core Faculty &middot; Affiliate Faculty &middot; Core Fellows &middot; Affiliate Fellows</p>
             </div>
         </div>
     </div>
@@ -915,7 +934,7 @@
     <div class="container">
         <h2 class="fade-in">People</h2>
 
-        <div class="people-tier-label">Co-Directors</div>
+        <div class="people-tier-label">Directors</div>
         <div class="people-grid fade-in">
             <!-- Moran Ofir -->
             <div class="person-card">
@@ -928,8 +947,11 @@
                     </div>
                 </div>
                 <div class="person-bio">
-                    <p>Specializes in corporate and securities law, empirical analysis of law, fintech, behavioral finance and financial decision-making. Visiting scholar at NYU, Columbia, Oxford, and LSE. Serves on the ISA Advisory Committee on Capital Markets and Technology and as independent director of a commercial bank.</p>
-                    <p class="text-small">Ph.D. Finance, Hebrew University &middot; MBA Finance &middot; LL.B.</p>
+                    <p class="person-bio-short">Specializes in corporate and securities law, empirical analysis of law, fintech, behavioral finance and financial decision-making. Visiting scholar at NYU, Columbia, Oxford, and LSE. Member of the ISA Advisory Committee on Capital Markets and Technology.</p>
+                    <div class="person-bio-full">
+                        <p>Moran Ofir is a Professor of Law and Finance at the Faculty of Law at the University of Haifa. She holds a Ph.D. in Finance from the Hebrew University of Jerusalem in a program of the Center for the Study of Rationality, in addition to an MBA in Finance and a Bachelor of Law (LL.B.). She has been a visiting scholar at the law faculties of NYU, Columbia, Oxford, LSE, and more. Prof. Ofir specializes in corporate and securities law, empirical analysis of law, fintech, behavioral finance and financial decision-making. Her research has been published in leading academic journals in both the field of law and finance and has won competitive research grants. The findings of her research have also appeared on academic and business blogs, have been discussed in podcasts and extensively covered in the media.</p>
+                        <p>In addition to her academic and research activities, Prof. Ofir served as a member of the Israel Securities Authority (ISA) Advisory Committee on Capital Markets and Technology and as a panel member specializing in the capital market in the ISA's Administrative Enforcement Committee. She serves as an independent director and is a member of the Audit, Remuneration, Strategy and Capital Planning Committees of a commercial bank.</p>
+                    </div>
                 </div>
                 <div class="person-links">
                     <a href="mailto:mofir@univ.haifa.ac.il">Email</a>
@@ -947,8 +969,11 @@
                     </div>
                 </div>
                 <div class="person-bio">
-                    <p>Uses advanced data science for research on corporate and securities law, with a primary focus on informed trading in capital markets. Employs statistical analysis and machine learning to study short selling, securities lending, insider trading, and information transmission in financial markets.</p>
-                    <p class="text-small">Ph.D. Finance &amp; Economics, Columbia Business School &middot; J.D., Yale &middot; B.A. <em>summa cum laude</em>, Georgetown</p>
+                    <p class="person-bio-short">Uses advanced data science for research on corporate and securities law, focusing on informed trading in capital markets. Employs statistical analysis and machine learning.</p>
+                    <div class="person-bio-full">
+                        <p>Joshua Mitts, who joined the faculty in 2017 as associate professor of law and was named professor of law in 2022, uses advanced data science for his research on corporate and securities law. His primary focus is on informed trading in capital markets and related topics in law and finance. Mitts employs empirical methods, including statistical analysis and machine learning, for his research on short selling, securities lending, informed trading on cybersecurity breaches, information leakage and hedge fund activism, insider trading on corporate disclosures, and information transmission in financial markets.</p>
+                        <p class="text-small">Ph.D. Finance &amp; Economics, Columbia Business School &middot; J.D., Yale &middot; B.A. <em>summa cum laude</em>, Georgetown</p>
+                    </div>
                 </div>
                 <div class="person-links">
                     <a href="mailto:jmitts@law.columbia.edu">Email</a>
@@ -958,7 +983,7 @@
             </div>
         </div>
 
-        <div class="people-tier-label">Principal Investigators</div>
+        <div class="people-tier-label">Core Faculty</div>
         <div class="people-grid fade-in">
             <!-- Tal Zarsky -->
             <div class="person-card">
@@ -971,11 +996,14 @@
                     </div>
                 </div>
                 <div class="person-bio">
-                    <p>Research focuses on information privacy, cyber-security, internet policy, algorithmic decisions, and the legal theory of private law. Former Fellow at Yale ISP and NYU Hauser Global Law School. Has advised regulators, legislators, and commercial entities on law in the digital age.</p>
-                    <p class="text-small">J.S.D. &amp; LL.M., Columbia Law School &middot; B.A. Law &amp; Psychology <em>high honors</em>, Hebrew University</p>
+                    <p class="person-bio-short">Research focuses on information privacy, cyber-security, algorithmic decisions, and law in the digital age. Former Fellow at Yale ISP and NYU Hauser Global Law School.</p>
+                    <div class="person-bio-full">
+                        <p>Tal Zarsky is Dean and a Professor of Law at the University of Haifa's Faculty of Law. His research focuses on Information Privacy, Cyber-Security, Internet Policy, Social Networks, Telecommunications Law, Online Commerce, Algorithmic Decisions and the Legal Theory of Private Law. He published numerous articles and book chapters in the U.S., Europe and Israel. His work is often cited in a variety of contexts related to law in the digital age. Prof. Zarsky has advised various regulators, legislators and commercial entities on matters related to his fields of expertise. He served on a variety of advisory boards and is a frequent evaluator of articles and research grants for various international foundations.</p>
+                        <p>Prof. Zarsky was a Fellow at the Information Society Project, at Yale Law School and a Global Hauser Fellow, at NYU Law School. His academic visits and teaching appointments include the law schools at the universities of Pennsylvania, Amsterdam and Ottawa. He completed his doctorate dissertation, which focused on Data Mining in the Internet Society, at Columbia University School of Law. He earned a joint B.A. degree (law and psychology) at the Hebrew University with high honors and his master degree (in law) from Columbia University.</p>
+                    </div>
                 </div>
                 <div class="person-links">
-                    <a href="https://cris.haifa.ac.il/en/persons/tal-zarsky/" target="_blank">Profile</a>
+                    <a href="https://cris.haifa.ac.il/en/persons/tal-zarsky/" target="_blank" rel="noopener">Profile</a>
                 </div>
             </div>
             <!-- Nizan Geslevich Packin -->
@@ -1009,8 +1037,10 @@
                     </div>
                 </div>
                 <div class="person-bio">
-                    <p>Affiliate of Columbia's Data Science Institute. Research examines the law and economics of consumer markets, with particular attention to how emerging technologies shape consumer welfare and impact distributional disparities. Program Co-Chair, ACM FAccT 2025.</p>
-                    <p class="text-small">Ph.D. Business Economics &amp; S.J.D., Harvard &middot; B.C.L. <em>with distinction</em>, Oxford &middot; LL.B., Hebrew University</p>
+                    <p class="person-bio-short">Research examines the law and economics of consumer markets, with attention to how emerging technologies shape consumer welfare and distributional disparities.</p>
+                    <div class="person-bio-full">
+                        <p>Talia Gillis is the Daniel G. Ross Professor of Law at Columbia Law School and an affiliate of Columbia's Data Science Institute. Her research examines the law and economics of consumer markets, with particular attention to how emerging technologies shape consumer welfare and impact distributional disparities. A central focus of her research is the use of AI in consumer credit and its impact on fair lending practices and doctrine. She has served as Program Co-Chair for ACM FAccT 2025 and will serve as General Chair of the ACM Computer Science &amp; Law Symposium in 2027. She holds a Ph.D. in Business Economics from Harvard University and an SJD from Harvard Law School. Prior to her doctoral studies, she earned a BCL from Oxford University and an LL.B. in Law and Economics from the Hebrew University.</p>
+                    </div>
                 </div>
                 <div class="person-links">
                     <a href="mailto:tbg2117@columbia.edu">Email</a>
@@ -1039,7 +1069,7 @@
             </div>
         </div>
 
-        <div class="people-tier-label">Research Fellows</div>
+        <div class="people-tier-label">Affiliate Faculty</div>
         <div class="people-grid three-col fade-in">
             <!-- Leeor Ofer -->
             <div class="person-card">
@@ -1052,7 +1082,10 @@
                     </div>
                 </div>
                 <div class="person-bio">
-                    <p>S.J.D. candidate at Harvard Law School. Research focuses on corporate governance and securities regulation. Editor, Harvard Law Forum on Corporate Governance.</p>
+                    <p class="person-bio-short">Postdoctoral Scholar at Columbia Law School. S.J.D. candidate at Harvard. Research focuses on corporate governance and securities regulation.</p>
+                    <div class="person-bio-full">
+                        <p>Leeor Ofer is a Postdoctoral Scholar at Columbia Law School, an editor of the Harvard Law School Forum on Corporate Governance, and a member of the Israeli Bar. She is also an S.J.D. candidate at Harvard Law School. Her research focuses on corporate governance and securities regulation. Before entering academia, Leeor worked as an associate at Gornitzky &amp; Co., a leading Israeli law firm, where she advised corporations and directors on corporate governance, securities regulation, and insider trading matters. Leeor holds an LL.M. from Harvard Law School (requirements fulfilled, degree waived), an M.B.A. from the Hebrew University of Jerusalem (with a specialization in banking and finance), and an LL.B., magna cum laude, from the Hebrew University of Jerusalem.</p>
+                    </div>
                 </div>
             </div>
             <!-- Matthew Chippin -->
@@ -1066,9 +1099,16 @@
                     </div>
                 </div>
                 <div class="person-bio">
-                    <p>Scholar of comparative insolvency and corporate finance law. Working with Prof. Aran on the ISF project on startup ownership. Developing a monograph for the Elgar Corporate and Insolvency Law series.</p>
+                    <p class="person-bio-short">Scholar of comparative insolvency and corporate finance law. Postdoctoral Researcher at the University of Haifa, working on the ISF project on startup ownership.</p>
+                    <div class="person-bio-full">
+                        <p>Dr. Matthew Chippin, JD (Dalhousie), PhD (Leeds), is a scholar of comparative insolvency and corporate finance law, with a focus on insolvency architecture, capital market structures, and market ordering in common law jurisdictions. His recent and forthcoming work appears in the Capital Markets Law Journal (OUP) and Trusts &amp; Trustees (OUP), as well as in edited collections with Edward Elgar. Dr. Chippin is a Postdoctoral Researcher at the University of Haifa Faculty of Law, working with Prof. Yifat Aran on the Israel Science Foundation project "Theoretical and Comparative Analysis of Startup Ownership," and is currently developing a monograph, The Pari Passu Principle, for the Elgar Corporate and Insolvency Law and Practice series. He is also engaged with the Croatian-Canadian Business and Scientific Cluster, and has held visiting research positions at the University of Sydney Law School, the Marine and Environmental Law Institute at Dalhousie University's Schulich School of Law, and Arizona State University's Sandra Day O'Connor College of Law.</p>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div class="people-tier-label">Core Fellows</div>
+        <div class="people-grid three-col fade-in">
             <!-- Alona Gueta -->
             <div class="person-card">
                 <div class="person-header">
@@ -1080,7 +1120,10 @@
                     </div>
                 </div>
                 <div class="person-bio">
-                    <p>Academic Manager, Fischer Center for Corporate Governance at TAU. Former clerk to Justice Kasher, Supreme Court of Israel. Former associate, Meitar Law Offices.</p>
+                    <p class="person-bio-short">Academic Manager, Fischer Center for Corporate Governance at TAU. Former clerk to Justice Kasher, Supreme Court of Israel.</p>
+                    <div class="person-bio-full">
+                        <p>Alona Gueta is a Research Fellow at the Columbia–Haifa Global Markets Research Group. She also serves as the Academic Manager of the Fischer Center for Corporate Governance and as a Teaching and Research Assistant at Tel Aviv University's Faculty of Law. She formerly served as a law clerk to the Honorable Justice Yechiel Kasher of the Supreme Court of Israel, and as a Legal Associate in the Litigation Department at Meitar Law Offices. Alona holds an LL.B. (magna cum laude) from Tel Aviv University, where she served as an Editor of the TAU Journal of Law, Society &amp; Culture. Her primary research interests are corporate law, corporate governance, and economic analysis of law.</p>
+                    </div>
                 </div>
             </div>
             <!-- Haggai Porat -->
@@ -1094,7 +1137,10 @@
                     </div>
                 </div>
                 <div class="person-bio">
-                    <p>S.J.D. candidate at Harvard, Ph.D. candidate in Economics at Tel Aviv University. Research on algorithmic price discrimination, consumer law, and privacy in AI-enabled markets.</p>
+                    <p class="person-bio-short">Law &amp; Economics Fellow at NYU. S.J.D. candidate at Harvard, Ph.D. candidate in Economics at Tel Aviv University.</p>
+                    <div class="person-bio-full">
+                        <p>Haggai is a Law and Economics Fellow at the NYU School of Law. He is also an SJD candidate and Olin Fellow at Harvard Law School and a PhD candidate in Economics at Tel Aviv University. Haggai's research lies at the intersection of consumer law, privacy and data protection, and the regulation of AI-enabled markets, with a focus on algorithmic price discrimination and personalized pricing in digital commerce. A second strand of his research examines judicial decision-making and litigation. He combines empirical, computational, and theoretical methods in his work. His scholarship has appeared in legal and interdisciplinary outlets, including the Journal of Legal Studies, PLoS ONE, and The Cambridge Handbook on Price Personalization and the Law.</p>
+                    </div>
                 </div>
             </div>
             <!-- Michael Sierra -->
@@ -1108,7 +1154,10 @@
                     </div>
                 </div>
                 <div class="person-bio">
-                    <p>Doctoral work examines regulatory intermediaries and regulatory sandboxes as tools for AI governance. Shasha Fellow and Federmann Cyber Security Center Fellow.</p>
+                    <p class="person-bio-short">Ph.D. student at Hebrew University. Research focuses on the regulation of AI, examining regulatory sandboxes and intermediaries.</p>
+                    <div class="person-bio-full">
+                        <p>Michael Sierra is a lawyer and a PhD student in law at the Hebrew University of Jerusalem. He is a James J. Shasha Fellow, a fellow at the Federmann Cyber Security Center, and a fellow at the Cheshin Center for Advanced Legal Studies. His research focuses on the regulation of artificial intelligence (AI) under the supervision of Prof. Yuval Shany and Prof. David Levi-Faur. His doctoral work examines regulatory intermediaries and regulatory sandboxes as tools for AI governance, drawing on insights from regulation theory and human rights law. He holds an LL.B. and an LL.M. (magna cum laude), as well as a B.A. (magna cum laude) in International Relations, all from the Hebrew University of Jerusalem. He has previously served as a research and teaching assistant at the Hebrew University and also worked at the Israel Democracy Institute and the Supreme Court of Israel.</p>
+                    </div>
                 </div>
             </div>
             <!-- Yasmin Yakove -->
@@ -1122,7 +1171,10 @@
                     </div>
                 </div>
                 <div class="person-bio">
-                    <p>Research focuses on corporate and insolvency law, with an emphasis on startup companies. Attorney at Salomon Lipschutz &amp; Co.</p>
+                    <p class="person-bio-short">Research focuses on corporate and insolvency law, with an emphasis on startup companies. Attorney at Salomon Lipschutz &amp; Co.</p>
+                    <div class="person-bio-full">
+                        <p>Yasmin is a lawyer with an LL.B., cum laude, from Bar-Ilan University and an LL.M., cum laude (Dean's List), specializing in business and commercial law from the University of Haifa. Her research focuses on corporate and insolvency law, with an emphasis on startup companies.</p>
+                    </div>
                 </div>
             </div>
             <!-- Noam Shpigler -->
@@ -1136,7 +1188,10 @@
                     </div>
                 </div>
                 <div class="person-bio">
-                    <p>Research interests in prediction markets and gamified trading platforms, with attention to the boundary between investment and gambling and the regulatory challenges of wager-like financial instruments.</p>
+                    <p class="person-bio-short">Research interests in prediction markets and gamified trading platforms, examining the boundary between investment and gambling.</p>
+                    <div class="person-bio-full">
+                        <p>Noam Shpigler is an LL.M. student at the Hebrew University of Jerusalem, specializing in private and commercial law, and a graduate of its multidisciplinary "Machpil" program in law, philosophy, and economics. Her academic interests lie in prediction markets and gamified trading platforms, with particular attention to the changing profile of the typical investor, the ways in which short-term, event-based speculation blurs the boundary between investment and gambling, and the legal and regulatory challenges posed by wager-like products treated as financial instruments.</p>
+                    </div>
                 </div>
             </div>
             <!-- Ariel Shillo -->
@@ -1150,7 +1205,10 @@
                     </div>
                 </div>
                 <div class="person-bio">
-                    <p>Research focuses on corporate governance, board decision-making, and executive compensation. Incoming Supreme Court clerk. Articles Editor, Mishpatim Law Review.</p>
+                    <p class="person-bio-short">Research focuses on corporate governance, board decision-making, and executive compensation. Incoming Supreme Court clerk.</p>
+                    <div class="person-bio-full">
+                        <p>Ariel Shillo is a fourth-year student in the interdisciplinary "Machpil" program at the Hebrew University of Jerusalem, combining law, economics, and philosophy. She is scheduled to clerk at the Supreme Court of Israel beginning in September 2026. Her academic work focuses on corporate law, with particular interest in corporate governance, board decision-making, executive compensation, and the interaction between regulation and firm behavior. She has co-authored several forthcoming articles addressing topics such as board overload, ESG, and revolving doors in the context of corporate law, with publications expected in journals including the Washington University Law Review and the Arizona State Law Journal. Alongside her research, Ariel serves as an Articles Editor of Mishpatim Law Review and as a research and teaching assistant in corporate law, and has gained practical experience in regulatory policy and corporate legal work.</p>
+                    </div>
                 </div>
             </div>
             <!-- Elisha Baker -->
@@ -1164,7 +1222,10 @@
                     </div>
                 </div>
                 <div class="person-bio">
-                    <p>Incoming J.D. student at Columbia Law School. Research interests span international law and economics, cross-border markets, and U.S.-Israel relations. Research assistant to Prof. Mitts.</p>
+                    <p class="person-bio-short">Incoming J.D. student at Columbia Law School. Research interests span international law and economics and cross-border markets.</p>
+                    <div class="person-bio-full">
+                        <p>Elisha Baker is a Student Fellow at the Columbia-Haifa Global Markets Research Group and an incoming student at Columbia Law School, where he will begin his J.D. in Fall 2026 after graduating from Columbia University in May 2026. His research interests span international law and economics, cross-border markets, and foreign policy, with a particular focus on U.S.-Israel and Israeli-Arab relations. At Columbia, Elisha serves as a research assistant to Professor Joshua Mitts, where he has worked on topics including Israeli M&amp;A, prediction markets, Jewish civil rights, and university governance. Elisha is chair emeritus of Columbia Aryeh, a student-led Israel education and advocacy group, and a Geller International Senior Fellow at the Israel on Campus Coalition.</p>
+                    </div>
                 </div>
             </div>
             <!-- Elijah Patrick Emery -->
@@ -1178,7 +1239,10 @@
                     </div>
                 </div>
                 <div class="person-bio">
-                    <p>Head Articles Editor, Columbia Journal of Transnational Law. Interested in the intersection of law and finance, especially the impact of new technologies on the financial landscape.</p>
+                    <p class="person-bio-short">Head Articles Editor, Columbia Journal of Transnational Law. Interested in law and finance, especially new technologies in the financial landscape.</p>
+                    <div class="person-bio-full">
+                        <p>Elijah Patrick Emery is a third-year student at Columbia Law School, originally from Yonkers, NY. He is interested in the intricacies between law and strategy and the law of finance, especially the impact of new technologies on the financial landscape. At Columbia, he serves as Head Articles Editor of the Columbia Journal of Transnational Law. Upon graduation, Elijah will join Cleary Gottlieb Steen &amp; Hamilton as an associate. He is drawn to the ways legal frameworks shape — and are shaped by — financial markets and institutional decision-making, and is excited to be joining the Columbia-Haifa Global Markets Research Group to better understand the frontiers of global markets, law and economics, and technology and policy.</p>
+                    </div>
                 </div>
             </div>
             <!-- Ethan Horowitz -->
@@ -1192,7 +1256,10 @@
                     </div>
                 </div>
                 <div class="person-bio">
-                    <p>Member, Columbia Business Law Review. Research interests in global capital markets, financial regulation, and law and economics. Prior experience at Kirkland &amp; Ellis and Morgan Stanley.</p>
+                    <p class="person-bio-short">Member, Columbia Business Law Review. Research interests in global capital markets, financial regulation, and law and economics.</p>
+                    <div class="person-bio-full">
+                        <p>Ethan Horowitz is a J.D. Candidate at Columbia Law School. He holds a B.A., magna cum laude, in Political Economy with a minor in Business Law from the University of Southern California. At Columbia, Ethan is a member of the Columbia Business Law Review, where he has written on issues of corporate law and policy. His prior professional experience includes a summer associate position at Kirkland &amp; Ellis LLP, as well as positions at Morgan Stanley wealth management compliance and the Chancery Division of the New Jersey Superior Court. His research interests lie at the intersection of global capital markets, financial regulation, and law and economics.</p>
+                    </div>
                 </div>
             </div>
             <!-- Mary Suberu -->
@@ -1206,7 +1273,43 @@
                     </div>
                 </div>
                 <div class="person-bio">
-                    <p>Qualified English solicitor. Trained at Mayer Brown (London) advising on cross-border PE, M&amp;A, and financing across U.S., U.K., and European markets. Interests in global capital markets and fund formation.</p>
+                    <p class="person-bio-short">Qualified English solicitor. Trained at Mayer Brown (London) in cross-border PE, M&amp;A, and financing. Interests in global capital markets and fund formation.</p>
+                    <div class="person-bio-full">
+                        <p>Mary Suberu is a law candidate at Columbia Law School in New York, where she is deeply engaged in the legal and financial community through leadership roles and affiliations with organizations such as the NYC Bar Association and Black Law Student Association. She trained at Mayer Brown in London, where she became a qualified English solicitor and advised on complex cross-border private equity, M&amp;A, and financing transactions spanning the U.S., U.K., and European markets. Building on this international foundation, Mary is focused on leveraging her London-based transactional experience to navigate and contribute to the U.S. legal market, particularly in New York's dynamic financial sector. Her interests lie in global capital markets, fund formation, and sophisticated deal structuring. She brings a strong commercial perspective, French language skills, and a proven ability to operate across jurisdictions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="people-tier-label">Affiliate Fellows</div>
+        <div class="people-grid three-col fade-in">
+            <!-- Dror Kenett -->
+            <div class="person-card">
+                <div class="person-header">
+                    <img class="person-photo" src="https://loop.frontiersin.org/images/profile/73268/203" alt="Dror Kenett" loading="lazy">
+                    <div class="person-meta">
+                        <div class="person-name">Dror Kenett</div>
+                        <div class="person-title">Economist</div>
+                        <span class="person-badge other">FINRA</span>
+                    </div>
+                </div>
+                <div class="person-bio">
+                    <p>Economist at FINRA Office of the Chief Economist and Adjunct Professor at Johns Hopkins University. Research focuses on financial networks, systemic risk, and macroprudential regulation. Former researcher at the U.S. Treasury and the World Bank.</p>
+                    <p class="text-small">Ph.D. Physics, Tel Aviv University &middot; Post-Doctorate, Boston University</p>
+                </div>
+            </div>
+            <!-- Uri Volovelsky -->
+            <div class="person-card">
+                <div class="person-header">
+                    <div class="person-photo placeholder" aria-label="Uri Volovelsky">UV</div>
+                    <div class="person-meta">
+                        <div class="person-name">Uri Volovelsky</div>
+                        <div class="person-title">Senior Legal Counsel</div>
+                        <span class="person-badge other">Israel Ministry of Justice</span>
+                    </div>
+                </div>
+                <div class="person-bio">
+                    <p>Senior Legal Counsel at the Asset Forfeiture Unit, Israel Ministry of Justice. Faculty member at Striks Law School. Licensed attorney in Israel and New York. Research interests in technology and privacy law, financial markets, and fintech.</p>
                 </div>
             </div>
         </div>
@@ -1445,6 +1548,14 @@
     }, { rootMargin: '-20% 0px -60% 0px' });
 
     sections.forEach(s => navObserver.observe(s));
+
+    // Person bio expand/collapse
+    document.querySelectorAll('.person-name').forEach(name => {
+        name.addEventListener('click', () => {
+            const card = name.closest('.person-card');
+            card.classList.toggle('expanded');
+        });
+    });
 </script>
 
 </body>
